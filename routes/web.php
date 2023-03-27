@@ -17,7 +17,7 @@ use App\Http\Controllers\PersonnagesController;
 Route::controller(PersonnagesController::class)->group(function(){
     Route::get('/','index');
     Route::get('/{id}','show')->name('personnages.show');
-    Route::get('/Add','add')->name('personnages.add');
+    Route::get('/per/Add','add')->name('personnages.add');
     Route::post('/store','store')->name('personnages.store');;
     Route::get('/{id}/edit','edit')->name('personnages.edit');;
     Route::put('/{id}/update','update')->name('personnages.update');;
